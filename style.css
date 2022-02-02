@@ -1,0 +1,53 @@
+.quiz-area {
+    background-image: url("https://t4.ftcdn.net/jpg/02/71/12/01/360_F_271120192_ZDT2FCxH94akiIsOHwVULWnbNzi8Oagn.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Oswald', cursive;
+}
+
+.flex-container {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-flow: wrap row;
+    align-content: center;
+    justify-content: center;
+}
+
+.flex-item {
+    font-family: 'Oswald', cursive;
+    color: coral;
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+    background-color: #f9efe5;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.card {
+    transform-style: preserve-3d;
+    transition: 2s ease;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.back {
+    transform: rotateY(180deg);
+    transition: rotate(180deg);
+}
